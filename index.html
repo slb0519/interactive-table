@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Interactive Multiplication Table</title>
+  </head>
+  <body>
+    <h1>Interactive Multiplication Table</h1>
+
+    <!-- Form to get four numbers -->
+    <h2>Input Numbers Here</h2>
+    <form class="get-input">
+      <label for="xStart">Enter xStart:</label>
+      <input type="text" name="xStart" id="xStart" value = -5><br>
+      <label for="xEnd">Enter xEnd:</label>
+      <input type="text" name="xEnd" id="xEnd" value = 5><br>
+      <label for="yStart">Enter yStart:</label>
+      <input type="text" name="yStart" id="yStart" value = -5><br>
+      <label for="yEnd">Enter yEnd:</label>
+      <input type="text" name="yEnd" id="yEnd" value = 5><br>
+    </form>
+
+    <!-- calls script -->
+    <button onclick="myFunction()">Build Table</button>
+
+    <!-- p for error messages -->
+    <p id=error></p>
+    
+    <!-- empty div for script to write into -->
+    <div id="myTable"></div>
+
+    <!-- My js file -->
+    <script src="script.js"></script>
+
+  </body>
